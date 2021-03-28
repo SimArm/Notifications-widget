@@ -23,7 +23,7 @@ const GroupSection = ({groupBy, data}) => {
                 {groupCondition.map((item, index)=>
                     {
                         return (
-                        <FlexboxGrid.Item colspan={5}>
+                        <FlexboxGrid.Item colspan={5} className='groupWrapper'>
                         <div>{groupCondition[index].label}</div>
                                 {
                                 dataFilter(groupBy ,item).map((Notif,index) => {

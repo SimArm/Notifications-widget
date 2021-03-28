@@ -69,11 +69,13 @@ const Home = () => {
                 </div>
             </Content>
             <Footer className='show-grid'>
+                {!groupToggle &&
                 <FlexboxGrid justify="center">
                 <IconButton icon={<Icon icon="left" />} placement="left" onClick={() => {setPage(page !== 1 ? page-1 : 1)}}/>
                 <p className='pageFont'>{page}</p>
                 <IconButton icon={<Icon icon="right" />} placement="right" onClick={() => {setPage(page < maxPages ? page+1 : maxPages)}}/>
                 </FlexboxGrid>
+                }
             </Footer>
           </Container>
         </Container>
