@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Widget from './views/Widget';
 import Home from './views/Home';
+import 'rsuite/dist/styles/rsuite-default.css';
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
           <Route path="/" exact>
             <Widget />
           </Route>
-          <Route path="/notification" exact>
+          <Route path="/home" exact>
             <Home />
           </Route>
         </Switch>

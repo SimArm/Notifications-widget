@@ -1,0 +1,18 @@
+.rs-notification-title {
+    padding-top : 10px;
+}
+
+.notificationsWrapper{
+    height: 450px;
+    width: 300px;
+    overflow:scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    ::-webkit-scrollbar {
+        display: none;
+      }
+}
+
+.rs-notification-item-close {
+    display: none;
+}

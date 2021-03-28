@@ -1,0 +1,49 @@
+.notificationWrapper {
+    min-width: 250px;
+}
+
+.hidden{
+    display: none;
+}
+
+.show {
+    animation-duration: 1s;
+    animation-name: slide-in;
+}
+
+.titleDiv{
+    cursor: pointer;
+}
+
+.readBtn {
+    cursor: pointer;
+}
+
+.url {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 40%;
+}
+
+.muted {
+    background-color: rgba(235, 233, 233, 0.788) !important;
+    .rs-icon{
+        color:gray !important;
+    }
+    .titleDiv {
+        color: gray;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        margin-top: -5%; 
+        opacity: 0;
+    }
+    to {
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
